@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+
+  grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+
+  height: 100vh;
+  background-color: #0b0824;
+}
+
+.item { 
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-color: #2c0073;
+}
+
+.main {
+  grid-area: main;
+  background-color: #906acd;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #36166b;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #5c477f;
+}
