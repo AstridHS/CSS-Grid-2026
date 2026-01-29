@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 12px;
+
+  grid-auto-flow: column;
+
+  grid-auto-rows: 200px;
+  grid-auto-columns: 200px;
+
+  background-color: #76ba76;
+}
+
+.item {
+  background-color: #1e301e;
+}
+
+Commit: Tercera sesión de CSS Grid 
